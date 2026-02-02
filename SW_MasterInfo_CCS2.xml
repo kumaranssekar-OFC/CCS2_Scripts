@@ -1,0 +1,518 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet version="0.1" type="text/xsl" href="SW_InfoSheet.xsl"?>
+<SW_MasterInfo>
+
+<BoschPrjName>CCS2</BoschPrjName>
+
+<DocInfo
+  Doc_Version="V01.00"
+  Doc_Date="MANUALLY"
+  Doc_State="DRAFT"
+  Doc_Access="Confidential"
+  Doc_Scope="CCS2"
+  Doc_SetDef="MANUALLY"
+/>
+<ProjectInfo
+  SW_Version="MANUALLY"
+  SW_ID="MANUALLY"
+  SW_ID_GAS="MANUALLY"
+  SW_ID_NONGAS = "MANUALLY"
+  SW_PM="Vogel Peter (XC-CT/ERN2-P))/ Mohan Narayana Iyer (MS/PJ3-ECV-XC)/ Karthikeyan Somasundaram (MS/ECV2-XC) "
+  CHNG_NR="MANUALLY"
+/>
+<Overall_Infos
+ Col1="db_key_app"
+ Col2="ASS_App_SW_Vers"
+/>
+<Overall_Infos
+ Col1="db_key_sw"
+ Col2="ASS_ECU_SW_Nr"
+/>
+<Overall_Infos
+ Col1="db_read_app"
+ Col2="22 23 0D"
+/>
+<Overall_Infos
+ Col1="db_read_sw"
+ Col2="n.a"
+/>
+<Overall_Infos
+ Col1="ecn"
+ Col2=""
+/>
+<Overall_Infos
+ Col1="ecr"
+ Col2=""
+/>
+<Overall_Infos
+ Col1="target_dir"
+ Col2="\\bosch.com\dfsrb\DfsDE\DIV\CM\AI\SW_Production\Nissan\0060_CCS2_7515752366\00_SW\Release_Version"
+/>
+<Overall_Infos
+ Col1="target_prod_dir"
+ Col2="\\bosch.com\dfsrb\DfsDE\DIV\CM\AI\SW_Production\Nissan\0060_CCS2_7515752366\00_SW\_PCM_internal"
+/>
+<Overall_Infos
+ Col1="kds_pd_dir"
+ Col2="MANUALLY"
+/>
+<Overall_Infos
+ Col1="kds_pd_ver"
+ Col2="none MANUALLY"
+/>
+<Overall_Infos
+ Col1="kds_pd_file"
+ Col2="none MANUALLY"
+/>
+
+<Overall_Infos
+ Col1="scope_info"
+ Col2="CCS2"
+/>
+
+<Overall_Infos
+ Col1="spl_tmpl_p2"
+ Col2="CCS2_SPL_TMPL.xlsx"
+/>
+
+<Overall_Infos
+ Col1="sw_full_ver"
+ Col2="PP1_230619_CCS2_BU"
+/>
+
+<Overall_Infos
+ Col1="swid_gas"
+ Col2="XXXX"
+/>
+
+<Overall_Infos
+ Col1="swid_nongas"
+ Col2="XXXX"
+/>
+
+<Overall_Infos
+ Col1="template_dir"
+ Col2="_Documentation\_PCM_internal\Reference_sheets\UnitType"
+/>
+
+<Overall_Infos
+ Col1="del_resp"
+ Col2="pcm"
+/>
+
+<Overall_Infos
+ Col1="PM"
+ Col2="MANUALLY"
+/>
+
+<Overall_Infos
+ Col1="SW_PM"
+ Col2="MANUALLY"
+/>
+
+<Overall_Infos
+ Col1="HW_PM"
+ Col2="MANUALLY"
+/>
+
+<Overall_Infos
+ Col1="purpose"
+ Col2="MANUALLY"
+/>
+
+<SW_Versions
+ key="DTV_Boot_SW"
+ db_key="ASS_TVCard_BL_Version"
+ db_key_read="22 20 22"
+ diag_ver=""
+ label="Boot Version: DTV_BOOT_VER"
+ product="DTV_Boot_SW"
+ title="DTV Boot SW Version"
+ version="DTV_BOOT_VER"
+ file="ASS_TVCard_FW_File"
+/>
+
+<SW_Versions
+ key="DTV_HW"
+ db_key="ASS_DTV_HW_Version"
+ db_key_read="22 20 20"
+ diag_ver=""
+ label="Hardware Version: DTV_HW_VER"
+ product="DTV_HW"
+ title="DTV HW Version"
+ version="DTV_HW_VER"
+/>
+
+<SW_Versions
+ key="DTV_SW"
+ db_key="ASS_TVCard_FW"
+ db_key_read="22 20 21"
+ diag_ver=""
+ file="MANUALLY" 
+ label="Software Version: DTV_SW_VER"
+ product="DTV_SW"
+ src_file="MANUALLY"
+ title="DTV SW Version"
+ version="DTV_SW_VER"
+/>
+
+<SW_Versions
+ key="DTV_Parameter_1"
+ db_key="ASS_CRC_DTV_CONFIG_PAR1"
+ diag_ver="n.a."
+ db_key_read="" 
+ file="MANUALLY" 
+ title="DTV Parameter 1"
+ product="DTV Parameter 1"
+ src_file="MANUALLY"
+ version="MANUALLY"
+/>
+
+<SW_Versions
+ key="DTV_Parameter_2"
+ db_key="ASS_CRC_DTV_CONFIG_PAR2"
+ diag_ver="n.a."
+ db_key_read="" 
+ file="MANUALLY" 
+ title="DTV Parameter 2"
+ product="DTV Parameter 2"
+ src_file="MANUALLY"
+ version="MANUALLY"
+/>
+
+<SW_Versions
+ key="SBR"
+ date=""
+ db_key="ASS_SBR_SW_Vers"
+ db_key_read="22 70 10"
+ diag_ver="MANUALLY"
+ label="MANUALLY"
+ product="SBR"
+ version="MANUALLY"
+/>
+<SW_Versions
+ key="Flash4Linux"
+ db_key="ASS_FLW4LINUX_SW_Vers"
+ db_key_read="22 C0 20"
+ diag_ver="MANUALLY"
+ label=""
+ product="Flash4Linux"
+ title="Flash4Linux"
+ version=""
+/>
+
+<SW_Versions
+ key="cryptoenv_bosch"
+ db_key="ASS_CRYPTO_ENV_BOSCH"
+ db_key_read="22 23 21"
+ diag_ver="MANUALLY"
+ label="n.a."
+ product="cryptoenv_bosch"
+ title="Crypto Environment Bosch"
+ version=""
+/>
+
+<SW_Versions
+ key="cryptoenv_cust"
+ db_key="ASS_CRYPTO_ENV_CUSTOMER"
+ db_key_read="22 23 20"
+ diag_ver="MANUALLY"
+ label="n.a."
+ product="cryptoenv_cust"
+ title="Crypto Environment Customer"
+ version=""
+/>
+
+<SW_Versions
+ key="oemcrypto"
+ db_key="ASS_OEM_CRYPTO_PA"
+ db_key_read="n.a."
+ diag_ver="n.a."
+ label="n.a."
+ product="oemcrypto"
+ title="Supplier Feed (LINCS upload)"
+ version=""
+/>
+
+
+<SW_Versions
+ key="android_version"
+ db_key="ASS_App_Android_Version"
+ db_key_read="n.a."
+ diag_ver="n.a."
+ label="n.a."
+ product="android_version"
+ title="Android Version"
+ version=""
+/>
+
+<SW_Versions
+ key="SXM"
+ db_key="ASS_XM_SW_Vers"
+ db_key_read="22 70 51"
+ diag_ver="MANUALLY"
+ dev_partnum="n.a."
+ file=""
+ file_ext="n.a."
+ label="n.a."
+ product="sxm"
+ spl_title="n.a."
+ src_file="n.a."
+ title="SXM"
+ version="MANUALLY"
+/>
+
+<SW_Versions
+ key="cts"
+ db_key="ASS_CTS_SW_Vers"
+ db_key_read="22 F1 95"
+ db_key_crc="ASS_CRC_CTS_DelState_1"
+ diag_ver="MANUALLY"
+ file_ext="zip"
+ label="n.a. (Artifactory)"
+ product="cts"
+ config_product="variantInfoContainer.zip"
+ spl_title="* CTS / App SW"
+ src_file="MANUALLY"
+ CTS_file="MANUALLY"
+ CTS_config_src_file="MANUALLY"
+ title="UFS - CTS SW"
+ title_del="CTS Delivery State - CCS2"
+ CTS_config_version="" 
+ version="CTS_SW_VER"
+ variants="" 
+ 
+/>
+
+<SW_Versions
+ key="android_app_sw"
+ db_key="ASS_UFS_SW_Vers"
+ db_key_read="22 23 01"
+ diag_ver_app_sw_gas="MANUALLY"
+ diag_ver_app_sw_nongas="MANUALLY"
+ file_ext="zip"
+ label="n.a. (Artifactory)"
+ product="android_app_sw"
+ spl_title="* CTS / App SW"
+ gas_src_file="MANUALLY"
+ nongas_src_file="MANUALLY"
+ gas_file="MANUALLY"
+ nongas_file="MANUALLY"
+ title="UFS - APP SW"
+ variants=""
+ version=""
+ app_sw_gas_version=""
+ app_sw_nongas_version=""
+ branch="MANUALLY"
+/>
+
+<SW_Versions
+ key="aurix_autosar_app_sw"
+ db_key="ASS_AURIX_APP_SW_Vers"
+ db_key_read="22 11 58"
+ db_key_aurix_srec="ASS_AURIX_SREC"
+ db_key_aurix_dnl="ASS_AURIX_DNL"
+ diag_ver="MANUALLY"
+ file_ext="dnl"
+ file_ext_srec="srec"
+ label="n.a. (Artifactory)"
+ product="aurix_autosar_app_sw"
+ spl_title="* SCC TMPL"
+ src_file="MANUALLY"
+ srec_file="MANUALLY"
+ dnl_file="MANUALLY"
+ support_file="MANUALLY"
+ title="Aurix Autosar Application SW"
+ version=""
+/>
+
+<SW_Versions
+ key="UFS"
+ db_key="ASS_UFS_SW_Vers"
+ diag_ver="n.a"	
+ db_key_read="22 70 00"
+ product="UFS"
+/>
+
+<SW_Versions
+ key="ublox"
+ db_key="ASS_GPS_SW_Vers"
+ db_key_crc="ASS_CRC_GNSS"
+ db_key_crc_read="31 01 30 69"
+ db_key_read="22 70 30"
+ blank_dev="8611.C01.003"
+ diag_ver="MANUALLY"
+ file_ext="bin"
+ hash_crc="00 00 00 00 02 "
+ label="n.a. (Artifactory)"
+ product="uBlox"
+ spl_title="*UBlox"
+ bu_file="MANUALLY"
+ eu_file="MANUALLY"
+ src_file="from the appsw***** to be checked"
+ title="uBlox (GPS NOR Flash)"
+ version="4.04"
+ />
+ <!-- #version_sos="EXT CORE 4.04" -->
+ <!-- product="UBX_M9_404_SPG_0x48_shifted" -->
+
+
+<SW_Versions
+ key="aurix_tm"
+ db_key="ASS_AURIX_TM_SW_Vers"
+ db_key_read="22 70 04"
+ dev_partnum="n.a."
+ diag_ver="MANUALLY"
+ file_ext="n.a."
+ label="n.a. (Artifactory)"
+ partnum="n.a."
+ product="aurix_tm"
+ spl_title="n.a."
+ src_file="MANUALLY"
+ file="MANUALLY"
+ title="Aurix Test Manager"
+ version="MANUALLY" 
+/>
+
+<SW_Versions
+ key="Lontium_SW"
+ db_key="ASS_Lontium_FW"
+ diag_ver="MANUALLY"
+ db_key_read="31 01 11 71 99 43 03"   
+ hex_file="MANUALLY" 
+ zip_file="MANUALLY"
+ src_file="MANUALLY"
+ title="Lontium SW"
+ version="MANUALLY"
+/>
+
+<SW_Versions
+key="Prod_Tooling"
+db_key="ASS_ProdTool"
+db_key_crc="ASS_CRC_ProdTool"
+db_key_ProdTool_BE="ASS_ProdTool_BackEnd"
+BE_tool="PCAT"
+diag_ver="n.a."
+db_key_read="n.a." 
+file="MANUALLY" 
+title="Production Tooling (CFS)"
+title_BE="Production Tooling Backend"
+SP_link="MANUALLY" 
+src_file="\\bosch.com\dfsrb\DfsDE\DIV\CM\AI\SW_Production\Nissan\0060_CCS2_7515752366\01_Tools\production_tooling\version"
+version="v1.9"
+/>
+
+<SW_Versions
+key="CTS_Parameter"
+db_key_erase_lun="ASS_QC_CTS_PARAM_ERASE_LUN"
+db_key_op="ASS_QC_CTS_PARAM_OP"
+db_key_rxl="ASS_QC_CTS_PARAM_RXL"
+db_key_va="ASS_QC_CTS_PARAM_VA"
+db_key_pxl="ASS_QC_CTS_PARAM_PXL"
+cts_param_erase_lun="n.a."
+cts_param_op="flashflat"
+cts_param_rxl="rawprogram_ccs2_cts_C2.xml"
+cts_param_va="0"
+cts_param_pxl="patch_ccs2_cts.xml"
+diag_ver="n.a."
+db_key_read="n.a." 
+title="CTS Parameter" 
+/>
+
+<SW_Versions
+key="Application_Parameter"
+db_key_erase_lun="ASS_QC_APP_PARAM_ERASE_LUN"
+db_key_op="ASS_QC_APP_PARAM_OP"
+db_key_rxl="ASS_QC_APP_PARAM_RXL"
+db_key_va="ASS_QC_APP_PARAM_VA"
+db_key_pxl="ASS_QC_APP_PARAM_PXL"
+app_param_erase_lun="0 1 2 3 4 5 6"
+app_param_op="flashflat"
+app_param_rxl="MANUALLY"
+app_param_va="2"
+app_param_pxl="patch_ccs2.0.xml"
+diag_ver="n.a."
+db_key_read="n.a."  
+title="Application Parameter" 
+/>
+
+<SW_Versions
+key="Secure_Boot_Parameter"
+db_key_op="ASS_QC_SB_PARAM_OP"
+db_key_rxl="ASS_QC_SB_PARAM_RXL"
+db_key_va="ASS_QC_SB_PARAM_VA"
+db_key_pxl="ASS_QC_SB_PARAM_PXL"
+sec_param_op="flashflat"
+sec_param_rxl="rawprogram_ccs2.0_enable_secure_boot.xml"
+sec_param_va="2"
+sec_param_pxl="patch_ccs2.0.xml"
+diag_ver="n.a."
+db_key_read="n.a."  
+title="Secure Boot Parameter" 
+/>
+
+<SW_Versions
+key="VIP_DNL_Parameter"
+db_key_op="ASS_QC_VIP_PARAM_OP"
+db_key_rxl="ASS_QC_VIP_PARAM_RXL"
+db_key_va="ASS_QC_VIP_PARAM_VA"
+db_key_pxl="ASS_QC_VIP_PARAM_PXL"
+vip_param_op="flashflatsecured"
+vip_param_rxl="rawprogram_ccs2.0_aivi2-ccs20-D1.xml"
+vip_param_va="0"
+vip_param_pxl="patch_ccs2.0.xml"
+diag_ver="n.a."
+db_key_read="n.a."  
+title="VIP DNL Parameter" 
+/>
+
+<SW_Versions
+key="PD_Delivery_State"
+db_key_crc="ASS_CRC_PD_DelState_1"
+file=""
+file_ext="zip"
+diag_ver="n.a."
+db_key_read="n.a." 
+src_file="MANUALLY"
+version="MANUALLY"
+title="PD Delivery State - CCS2"
+/>
+
+<!-- <SW_Versions
+key="CTS_Delivery_State"
+db_key_crc="ASS_CRC_CTS_DelState_1"
+file=""
+file_ext="zip"
+diag_ver="n.a."
+db_key_read="n.a." 
+version="MANUALLY"
+/> -->
+
+<SW_Versions
+key="UCB_Delivery_State"
+db_key_crc="ASS_CRC_UCB_DelState_1"
+file="Nissan_CCS2_UCB_Configuration_V0.9.1.xlsx"
+file_ext="xlsx"
+diag_ver="n.a."
+db_key_read="n.a." 
+version="V0.9.1"
+title="UCB Delivery State - CCS2"
+UCB_md5="e594b73191e761ec10be754d19813370"
+/>
+
+<SW_Versions
+key="UCB_Lock_Activate"
+db_key="ASS_AURIX_UCB_LOCK_ACTIVATE"
+status="MANUALLY"
+title="Activate Aurix UCB Lock"
+/>
+
+
+<SW_Versions
+key="Sec_Lock_Activate"
+db_key="ASS_QC_SB_LOCK_ACTIVATE"
+status="MANUALLY"
+title="Activate Sec Boot Lock"
+/>
+
+</SW_MasterInfo>

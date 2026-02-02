@@ -1,0 +1,54 @@
+#------------------------------------------------------------------------------
+# Recipient List 'TO' - everything after '#' is comment, whitespace is ignored
+#------------------------------------------------------------------------------
+ 
+TO: SPLePL.Abteilungsbriefkasten@de.bosch.com
+TO: PgP1_TeamR_NA-IVI@bosch.com
+TO: PgP1_TEF7_Team_R_NA-IVI@bosch.com
+TO: CM-CI1-ERN-ESW_SWPL@bcn.bosch.com
+TO: ZhengHao.Chen@my.bosch.com
+TO: Auke.Nauta@de.bosch.com
+TO: Johann.Fuhrmann@de.bosch.com
+TO: Tomomichi.Kondo@jp.bosch.com
+TO: HanHong.Lee@my.bosch.com
+TO: Leonid.Volosin@de.bosch.com
+TO: Thomas.Loehr@de.bosch.com
+TO: Ralph.Welz@de.bosch.com
+TO: Muruganasamy.Arunkumar@in.bosch.com
+TO: Kai.Poppe@de.bosch.com
+TO: Pg_PgP1_TEF7_Nissan_CCS2@bcn.bosch.com
+TO: JooWei.Tan@my.bosch.com
+TO: Hartwig.Koch@de.bosch.com
+TO: venna.vijaybharathreddy@in.bosch.com
+TO: YouChun.Sim@us.bosch.com
+TO: Bill.Lewis@us.bosch.com
+TO: Kenji.Ohta@jp.bosch.com
+TO: Kandasamy.UmaDhevi@us.bosch.com
+TO: EngSin.Tan@my.bosch.com
+TO: Mohanraj.Thangam@jp.bosch.com
+TO: Eiji.Sato2@jp.bosch.com
+TO: Toshihide.Akiyoshi@jp.bosch.com
+TO: Ameerali.Muchkuri@jp.bosch.com 
+TO: bot.tef7@bcn.bosch.com
+TO: kenneth.gerhart@us.bosch.com
+TO: yushi.shimamura@jp.bosch.com
+TO: Yasuhiko.Yoneyama@jp.bosch.com
+TO: Fumito.Yamanaka@bosch.com
+TO: viswanathan.venugopalan@jp.bosch.com
+TO: piyush.makhija@in.bosch.com
+TO: stefan.noll@de.bosch.com
+TO: HI_XC-CP-ECB-RNM_A-IVI_PM@bcn.bosch.com
+#------------------------------------------------------------------------------
+# Recipient List 'CC' - everything after '#' is comment, whitespace is ignored
+#------------------------------------------------------------------------------ 
+CC: CM-AI_PJ-CB_Proj_A-IVI_SW-PCM@bcn.bosch.com
+CC: CM-AI_PJ-CB_Proj_NCG3_Integrators@bcn.bosch.com
+CC: Stefan.Scherber@de.bosch.com
+CC: Bjoern.Thorwirth@de.bosch.com
+CC: Torsten.Billwitz@de.bosch.com
+CC: Markus.Wuest@de.bosch.com
+CC: Sebastian.Hempel@de.bosch.com
+CC: Joachim.Friess@de.bosch.com
+CC: Michael.Langer@de.bosch.com
+CC: Ingo.Zupp@de.bosch.com
+CC: xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx                       # don't send
