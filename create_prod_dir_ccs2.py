@@ -23,12 +23,14 @@
 # 25.11.2025   | Nisharani C            | bug fixes
 # 4.12.2025    | Nisharani C            | Changes to include new DBKey ASS_App_Android_Version into the SOS
 # 9.12.2025    | Nisharani C            | Bug fixes
+# 02.02.2026   | Kumaran Sekar          | Added a function "download from sharepoint" to download the files from sharepoint.
 #################################################################################################################
 
 import os
 import sys
 import re
 import optparse
+import requests
 import subprocess
 import pythoncom
 import win32com.client
@@ -45,6 +47,7 @@ import shutil
 #from datetime import date 
 #import datetime
 from datetime import datetime as dt
+from requests_kerberos import HTTPKerberosAuth, OPTIONAL
 from shutil import copy
 from artifactory import ArtifactoryPath
 from openpyxl import Workbook
@@ -57,7 +60,7 @@ global _md5_dict
 global _md5_dest_dict
 
 
-fop_path = r'C:\ccstg\amb5cob_DI_TOOLS_FI_TOOLS_13.0V01_2.vws\di_tools\java\fop-0.20.5\fop.sh'
+fop_path = r'%fop_Sh%'
 # fop_path = r'C:\ccstg\amb5cob_DI_TOOLS_FI_TOOLS_13.0V01_2.vws\di_tools\java\fop-0.20.5\fop.bat'
 _aurix_header_flag = "notset"
 _PD_Tooling_flag = "notset"
@@ -483,6 +486,7 @@ def check_artifacts():
     #PD Config
     _PD_filename = _PDDel_info["file"]
     _PD_Version = _PDDel_info["version"]
+    _url = _PDDel_info["src_file"] + "/"+_PD_filename
     #_pd_md5file = _PD_filename  + ".md5"  
     if "not" in _PD_filename:
         print ("\n PD Config file not available" )
@@ -497,9 +501,15 @@ def check_artifacts():
             pass 
             
         _pd_ver_file = _PD_path + "\\" + _PD_filename
+        if (os.path.exists(_pd_ver_file)):
+            print("PD file already exists: ", _pd_ver_file)
+        else:     
+            print("PD : The file doesn't exists, Hence it will get downloaded. \n")
+            download_from_sharepoint(_url, _pd_ver_file)   
+        #print("\n_pd_ver_file:", _pd_ver_file)
         #_pd_ver_md5 = _PD_path + _pd_md5file  
         #_url = _PD_path
-        # download_from_sharepoint(url, _PD_file)
+        #download_from_sharepoint(_url, _pd_ver_file)
         get_md5sum("PD_config_file_md5", _pd_ver_file) 
         _filenames_dict["_PD_filename"] = _PD_filename
     
@@ -517,8 +527,8 @@ def check_artifacts():
             print (_CFS_ver_file, " does not exist, please check ")
             exit()
         else:
-            #print("CFS path exists")
-            pass 
+            print(f" \n {_CFS_filename} exists in the path {_cfs_prod_path} \n")
+             
        
         get_md5sum("CFS_file_md5", _CFS_ver_file)
         _filenames_dict["_CFS_filename"] = _CFS_filename
@@ -758,6 +768,26 @@ def start_appsw_download_from_artifactory(_url,_filename):
     with path.open() as fd:
         with open(_filename, "wb") as out:
             out.write(fd.read())
+
+#def download_from_sharepoint(_url, _pd_ver_file):
+def download_from_sharepoint(_url, _filename):
+    _kerberos_auth = HTTPKerberosAuth(mutual_authentication=OPTIONAL)
+    _file_url = _url
+    #print(f"The file url:{file_url}")
+    _response = requests.get(_file_url, auth=_kerberos_auth, verify=False) 
+    #destination_path = _filename
+    _statuscode = _response.status_code 
+    #downloaded_file_path = destination_path
+    
+    if _statuscode != 200:
+        print (f"Could not download the file, please check:Response code is {_statuscode}")
+    else:
+        #print(f"Response Code : {_statuscode}, OK" )
+        _output = open(_filename, 'wb')
+        _output.write(_response.content)
+        #print (f"successfully downloaded {_filename}")
+        _output.close()
+
             
 def verify_md5sum(_md5_binary_key, _file ):
     #to cross verify the md5sum of the copied file against the md5sum of the source file which was already calculated via get_md5sum at check_artifacts function
